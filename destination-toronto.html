@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/shared/icon.jpg">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+        rel="stylesheet">
+        
+    <!-- Our custom CSS -->
+    <link rel="stylesheet" href="index.css">
+    <title>MAMABEAR | Everything Beautiful & Fun!</title>
+  <script src="navigation.js" defer></script>
+  <script src="tabs.js" defer></script>
+</head>
+
+<body class="destination">
+  <a class="skip-to-content" href="#main">Skip to content</a>
+
+  <!--  Common header --> 
+  <header class="primary-header flex">
+    <div>
+      <img src="./assets/shared/icon.jpg" alt="duck-duck logo" class="logo">
+    </div>
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">Menu</span></button>
+    <nav>
+        <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
+            <li class="active"><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="index.html"><span>00</span aria-hidden="true">Home</a>
+            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="destination.html"><span aria-hidden="true">01</span>Destination</a>
+            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="people.html"><span aria-hidden="true">02</span>People</a>
+            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="culture.html"><span aria-hidden="true">03</span>Culture</a>
+        </ul>
+    </nav>
+  </header>
+  
+  <!--  Toronto Main -->     
+
+  <main id="toronto" class="grid-container grid-container--destination flow">
+    <h1 class="numbered-title sr-only"><span aria-hidden="true">01</span> Pick other destination</h1>
+    <!--  Tablist --> 
+    <div class="tab-list underline-indicators flex" role="tablist" aria-label="destination list">
+        <button aria-selected="false" role="tab" aria-controls="albany-tab"  tabindex="-1" ><a class="uppercase ff-sans-cond text-accent letter-spacing-2" href="destination-albany.html">Albany NY</a></button>
+        <button aria-selected="false" role="tab" aria-controls="atlanta-tab" tabindex="-1" ><a class="uppercase ff-sans-cond text-accent letter-spacing-2" href="destination-atlanta.html">Atlanta GA</a></button>
+        <button aria-selected="false" role="tab" aria-controls="arizona-tab" tabindex="-1"><a class="uppercase ff-sans-cond text-accent letter-spacing-2" href="destination-arizona.html">Arizona</a></button>
+    </div>
+    
+    
+    <picture id="toronto-image">
+      <img src="./assets/destination/toronto.png" alt="toronto">
+    </picture>
+
+    
+
+    <!-- Toronto -->
+    <article class="destination-info flow" id="toronto-tab" tabindex="0" role="tabpanel">
+      <h2 class="fs-800 uppercase ff-serif">Toronto</h2>
+
+      <p>Toronto is the capital city of the Canadian province of Ontario. With a recorded population of 2,794,356 in 2021, 
+        it is the most populous city in Canada and the fourth most populous city in North America. 
+        The city is the anchor of the Golden Horseshoe, an urban agglomeration of 9,765,188 people surrounding the western end of Lake Ontario, 
+        while the Greater Toronto Area proper had a 2021 population of 6,712,341. Toronto is an international centre of business, 
+        finance, arts, and culture, and is recognized as one of the most multicultural 
+        and cosmopolitan cities in the world.</p>
+      
+      <div class="destination-meta flex">
+        <div>
+          <h3 class="text-accent fs-200 uppercase">Avg. distance</h3>
+          <p class="ff-serif uppercase">384,400 km</p>
+        </div>
+        <div>
+          <h3 class="text-accent fs-200 uppercase">Est. travel time</h3>
+          <p class="ff-serif uppercase">3 days</p>
+        </div>
+      </div>
+    </article>
+
+  </main>
+   
+</body>
+</html>

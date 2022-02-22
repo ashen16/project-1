@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/shared/icon.jpg">
+        <!-- Google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+            rel="stylesheet">
+            
+        <!-- Our custom CSS -->
+        <link rel="stylesheet" href="index.css">
+        <title>MAMABEAR | Everything Beautiful & Fun!</title>
+      <script src="navigation.js" defer></script>
+      <script src="tabs.js" defer></script>
+
+<body class="culture">
+  <a class="skip-to-content" href="#main">Skip to content</a>
+  <header class="primary-header flex">
+    <div>
+      <img src="./assets/shared/icon.jpg" alt="duck-duck logo" class="logo">
+    </div>
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">Menu</span></button>
+    <nav>
+        <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
+            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="index.html"><span>00</span aria-hidden="true">Home</a>
+            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="destination.html"><span aria-hidden="true">01</span>Destination</a>
+            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="people.html"><span aria-hidden="true">02</span>People</a>
+            <li class="active"><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="culture.html"><span aria-hidden="true">03</span>Culture</a>
+        </ul>
+    </nav>
+  </header>
+  
+  <main id="main" class="grid-container grid-container--culture flow">
+    <h1 class="numbered-title sr-only"><span aria-hidden="true">02</span> Meet your people</h1>
+    
+    <div class="dot-indicators flex" role="tablist" aria-label="culture member list">
+      <button aria-selected="true" aria-controls="commander-tab" role="tab" data-image="flour-image" tabindex="0"><span class="sr-only">story 1</span></button>
+      <button aria-selected="false" aria-controls="mission-tab" role="tab" data-image="gothic-image" tabindex="-1"><span class="sr-only">story 2</span></button>
+      <button aria-selected="false" aria-controls="pilot-tab" role="tab" data-image="vegetable-image" tabindex="-1"><span class="sr-only">story 3</span></button>
+      <button aria-selected="false" aria-controls="people-tab" role="tab" data-image="people-image" tabindex="-1"><span class="sr-only">story 4 4</span></button>
+    </div>
+    
+    <!-- Flour Trip -->
+    <article class="culture-details flow" id="commander-tab" role="tabpanel" tabindex="0">
+      <header class="flow flow--space-small">
+        <h2 class="fs-700 ff-serif uppercase">Flour Trip</h2>
+        <p class="fs-200 ff-serif">by Dayna Evans</p>
+      </header>
+      <p class="fs-200">Where were you during the great bread baking boom of 2020? Me, 
+        I was cleaning out a trash can full of dog food to make room for 50 pounds of flour.
+
+        The trash can belonged to Ziggy, my family’s late dearly beloved chihuahua (may he rest in peace),
+         but at the height of the first COVID crisis in August, I needed somewhere to store the flour 
+         I’d ordered from a wholesale bakers outlet.....<a class="ff-sans-cond fs-200 lowercase text-accent" 
+         href="https://www.eater.com/22913142/white-flour-whole-wheat-flour-differences-stone-milled" 
+         target="_blank" rel="noreferrer noopener">read more</a></p>
+    </article> 
+    
+    <!-- gothic -->
+    <article hidden class="culture-details flow" id="mission-tab" role="tabpanel" tabindex="0">
+      <header class="flow flow--space-small">
+        <h2 class="fs-700 ff-serif uppercase">What is ‘Gothic’?</h2>
+        <p class="fs-200 ff-serif">by ROGER LUCKHURST</p>
+      </header>
+      <h4 class="fs-400"><em>It’s more complicated than you think.</em></h4>
+      <p class="fs-200">Hidden in the architecture of some of the world’s most famous buildings is a cultural exchange between 
+        Europe and the Middle East. When fire devastated the Cathedral of Notre Dame in Paris in April 2019, the architectural historian 
+        Diana Darke noted in a Twitter post that of course everyone knew the famous twin tower and rose window of 
+        France’s finest Gothic cathedral were copied from a Syrian church in Qalb Loze built in the fifth century...<a class="ff-sans-cond fs-200 lowercase text-accent" 
+        href="https://www.nationalgeographic.com/travel/article/gothic-is-more-complicated-than-you-think"
+        target="_blank" rel="noreferrer noopener">read more</a></p>
+    </article> 
+    
+    <!-- vegetables -->
+    <article hidden class="culture-details flow" id="pilot-tab" role="tabpanel" tabindex="0">
+      <header class="flow flow--space-small">
+        <h2 class="fs-700 ff-serif uppercase">如何避免「癌前體質」？</h2>
+        <p class="fs-200 ff-serif">by 陳月卿</p>
+      </header>
+      <h4 class="fs-400">陳月卿：飲食遵守3原則，提升免疫力！</h4>
+      <p class="fs-200">「免疫力」，就是保護人體不受各種病原微生物侵害的能力。
+        提升免疫力最好的方法，就是均衡的飲食，供給免疫系統充分的原料，
+        讓它能根據身體需要進行各種不同的生化作用。吃對食物、給細胞足夠的養分，
+        不僅能強化人體自癒力，也是提升人體免疫力的不二法門。所謂「免疫力」，簡單地說，
+        就是保護人體不受各種病原微生物侵害的能力。人類有8、9成的疾病，從感冒到癌症，
+        都跟免疫力失調有關。<a class="ff-sans-cond fs-200 lowercase text-accent" 
+        href="https://www.fiftyplus.com.tw/articles/15694"
+        target="_blank" rel="noreferrer noopener">read more</a></p>
+    </article> 
+    
+    <!-- engineer -->
+    <article hidden class="culture-details flow" id="people-tab" role="tabpanel" tabindex="0">
+      <header class="flow flow--space-small">
+        <h2 class="fs-600 ff-serif uppercase">The Science of How Alive You Really Are: Alan Turing, Trees, and the Wonder of Life</h2>
+        <p class="fs-200 ff-serif">By Maria Popova</p>
+      </header>
+      <h4 class="fs-400">“The more a creature’s life is worth, the less of it is alive.”</h4>
+      <p class="fs-200">When the young Alan Turing (June 23, 1912–June 7, 1954) lost the love of his life, 
+        Christopher, to a bacterium contracted from cow’s milk, 
+        the grief-savaged future father of computing comforted his beloved’s 
+        grief-savaged mother by telling her that “the body provides something 
+        for the spirit to look after and use.” For the remainder of his life, 
+        he never ceased contemplating this binary code of body and spirit — a 
+        preoccupation fanned by this leveling loss in young adulthood, but 
+        ignited in childhood, by a book he had been given at age ten, a book 
+        he later told his own mother was what opened his mind and heart to 
+        science...<a class="ff-sans-cond fs-200 lowercase text-accent" 
+        href="https://www.themarginalian.org/2020/10/21/turing-natural-wonders/"
+        target="_blank" rel="noreferrer noopener">read more</a></p>
+    </article> 
+    
+    
+    <picture id="flour-image">
+      <img style="filter: brightness(120%)"  src="https://cdn.vox-cdn.com/thumbor/ESK0sy1VOjft5k6MyVwuIwpZ3B8=/0x0:3000x1800/3070x1727/filters:focal(1260x660:1740x1140):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/70479883/NMedina_Grain_Milling__final.0.jpg" alt="flour trip">
+    </picture>
+    <picture hidden id="gothic-image">
+      <img src="assets/culture/culture2.jfif" alt="culture2">
+    </picture>
+    <picture hidden id="vegetable-image">
+      <img src="assets/culture/vegetable.jfif" alt="vegetable">
+    </picture>
+    <picture hidden id="people-image">
+      <img src="assets/culture/culture4.jpg" alt="Douglas Hurley">
+    </picture>
+  </main>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/shared/icon.jpg">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+        rel="stylesheet">
+        
+    <!-- Our custom CSS -->
+    <link rel="stylesheet" href="index.css">
+    <title>MAMABEAR | Everything Beautiful & Fun!</title>
+  <script src="navigation.js" defer></script>
+  <script src="tabs.js" defer></script>
+  
+  
+</head>
+
+<body class="destination">
+  <a class="skip-to-content" href="#main">Skip to content</a>
+
+  <!--  Common header --> 
+  <header class="primary-header flex">
+    <div>
+      <img src="./assets/shared/icon.jpg" alt="duck-duck logo" class="logo">
+    </div>
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">Menu</span></button>
+    <nav>
+        <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
+            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="index.html"><span>00</span aria-hidden="true">Home</a>
+            <li class="active"><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="destination.html"><span aria-hidden="true">01</span>Destination</a>
+            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="people.html"><span aria-hidden="true">02</span>People</a>
+            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="culture.html"><span aria-hidden="true">03</span>Culture</a>
+        </ul>
+    </nav>
+  </header>
+  
+  <!--  Destination Main -->     
+  <!--  Pictures/Images --> 
+  <main id="main" class="grid-container grid-container--destination flow">
+    <h1 class="numbered-title"><span aria-hidden="true">01</span> Pick your destination</h1>
+    
+    <picture id="toronto-image">
+      <img src="./assets/destination/toronto.png" alt="toronto">
+    </picture>
+
+    <picture hidden id="albany-image">
+      <img src="./assets/destination/AlbanyNY.png" alt="Albany">
+    </picture>
+    <picture hidden id="atlanta-image">
+      <img src="./assets/destination/AtlantaGeorgia.png" alt="Atlant">
+    </picture>
+    <picture hidden id="arizona-image">
+      <img src="./assets/destination/Arizona.png" alt="Arizona">
+    </picture>
+    
+    <!--  Tablist --> 
+    <div class="tab-list underline-indicators flex" role="tablist" aria-label="destination list">
+        <button aria-selected="true" role="tab" aria-controls="toronto-tab" class="uppercase ff-sans-cond text-accent letter-spacing-2" tabindex="0" data-image="toronto-image">Toronto</button>
+        <button aria-selected="false" role="tab" aria-controls="albany-tab" class="uppercase ff-sans-cond text-accent letter-spacing-2" tabindex="-1" data-image="albany-image">Albany NY</button>
+        <button aria-selected="false" role="tab" aria-controls="atlanta-tab" class="uppercase ff-sans-cond text-accent letter-spacing-2" tabindex="-1" data-image="atlanta-image">Atlanta GA</button>
+        <button aria-selected="false" role="tab" aria-controls="arizona-tab" class="uppercase ff-sans-cond text-accent letter-spacing-2" tabindex="-1" data-image="arizona-image">Arizona</button>
+    </div>
+
+    <!-- Toronto -->
+    <article class="destination-info flow" id="toronto-tab" tabindex="0" role="tabpanel">
+      <h2 class="fs-800 uppercase ff-serif">Toronto</h2>
+
+
+      <p>Toronto is the capital city of the Canadian province of Ontario. With a recorded population of 2,794,356 in 2021, 
+        it is the most populous city in Canada and the fourth most populous city in North America. 
+        The city is the anchor of the Golden Horseshoe, an urban agglomeration of 9,765,188 people surrounding the western end of Lake Ontario, 
+        while the Greater Toronto Area proper had a 2021 population of 6,712,341. Toronto is an international centre of business, 
+        finance, arts, and culture, and is recognized as one of the most multicultural 
+        and cosmopolitan cities in the world...<a class="ff-sans-cond fs-200 lowercase text-accent" href="destination-toronto.html">more</a></p>
+      
+      
+      <div class="destination-meta flex">
+        <div>
+          <h3 class="text-accent fs-200 uppercase">Population</h3>
+          <p class="ff-serif uppercase">2.79million (2021)</p>
+        </div>
+        <div>
+          <h3 class="text-accent fs-200 uppercase">Mayor</h3>
+          <p class="ff-serif uppercase">John Tory</p>
+        </div>
+      </div>
+    </article>
+    
+    <!-- Albany -->
+    <article hidden class="destination-info flow" id="albany-tab" tabindex="0"  role="tabpanel">
+      <h2 class="fs-800 uppercase ff-serif">Albany</h2>
+
+      <p>Albany is the capital of the U.S. state of New York, and the seat 
+        and largest city of Albany County. Albany is on the west bank of the 
+        Hudson River, about 10 miles south of its confluence with the Mohawk 
+        River, and about 135 miles north of 
+        New York City...<a class="ff-sans-cond fs-200 lowercase text-accent" href="destination-albany.html">more</a></p>
+      
+      
+      <div class="destination-meta flex">
+        <div>
+          <h3 class="text-accent fs-200 uppercase">Population</h3>
+          <p class="ff-serif uppercase">99.224 (2020)</p>
+        </div>
+        <div>
+          <h3 class="text-accent fs-200 uppercase">Mayor</h3>
+          <p class="ff-serif uppercase">Kathy Sheehan</p>
+        </div>
+      </div>
+    </article>
+    
+    <!-- Atlanta -->
+    <article hidden class="destination-info flow" id="atlanta-tab" tabindex="0"  role="tabpanel">
+      <h2 class="fs-800 uppercase ff-serif">Atlanta</h2>
+
+      <p>Atlanta is the capital and most populous city of the U.S. state of Georgia. 
+        With a 2020 census population of 498,715, it is the 38th most populous 
+        city in the United States. It serves as the cultural and economic center 
+        of the Atlanta metropolitan area, home to more than six million people
+         and the ninth-largest metropolitan area in the nation. It is the seat of 
+         Fulton County, the most populous county in Georgia. Situated among the 
+         foothills of the Appalachian Mountains, 
+         it features unique topography that includes rolling hills and the 
+         most dense urban tree coverage in the United 
+         States... <a class="ff-sans-cond fs-200 lowercase text-accent" href="destination-atlanta.html">more</a></p>
+      
+      <div class="destination-meta flex">
+        <div>
+          <h3 class="text-accent fs-200 uppercase">Population</h3>
+          <p class="ff-serif uppercase">498,715 (2020)</p>
+        </div>
+        <div>
+          <h3 class="text-accent fs-200 uppercase">Mayor</h3>
+          <p class="ff-serif uppercase">Andre Dickens</p>
+        </div>
+      </div>
+    </article>
+    
+    <!-- Arizona -->
+    <article hidden class="destination-info flow" id="arizona-tab" tabindex="0"  role="tabpanel">
+      <h2 class="fs-800 uppercase ff-serif">Arizona</h2>
+
+      <p>Arizona is the only state in the U.S. that contains four separate 
+        desert regions, each with their own environment, 
+        flora and fauna. History & Heritage Visiting Arizona's American 
+        Indian Tribal Lands... <a class="ff-sans-cond fs-200 lowercase text-accent" href="destination-arizona.html">more</a></p>
+      
+      
+      <div class="destination-meta flex">
+        <div>
+          <h3 class="text-accent fs-200 uppercase">population</h3>
+          <p class="ff-serif uppercase">7.15million (2020)</p>
+        </div>
+        <div>
+          <h3 class="text-accent fs-200 uppercase">Capital</h3>
+          <p class="ff-serif uppercase">Phoenix</p>
+        </div>
+      </div>
+    </article>
+  </main>
+  
+<body>
+
+
+  
+</body>
+</html>

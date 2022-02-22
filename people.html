@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/shared/icon.jpg">
+        <!-- Google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+            rel="stylesheet">
+            
+        <!-- Our custom CSS -->
+        <link rel="stylesheet" href="index.css">
+        <title>MAMABEAR | Everything Beautiful & Fun!</title>
+      <script src="navigation.js" defer></script>
+      <script src="tabs.js" defer></script>
+
+<body class="people">
+  <a class="skip-to-content" href="#main">Skip to content</a>
+  <header class="primary-header flex">
+    <div>
+      <img src="./assets/shared/icon.jpg" alt="duck-duck logo" class="logo">
+    </div>
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">Menu</span></button>
+    <nav>
+        <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
+            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="index.html"><span>00</span aria-hidden="true">Home</a>
+            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="destination.html"><span aria-hidden="true">01</span>Destination</a>
+            <li class="active"><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="people.html"><span aria-hidden="true">02</span>People</a>
+            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="culture.html"><span aria-hidden="true">03</span>Culture</a>
+        </ul>
+    </nav>
+  </header>
+  
+  <main id="main" class="grid-container grid-container--people flow">
+    <h1 class="numbered-title sr-only"><span aria-hidden="true">02</span> Meet your people</h1>
+    
+    <div class="dot-indicators flex" role="tablist" aria-label="people member list">
+      <button aria-selected="true" aria-controls="commander-tab" role="tab" data-image="people1-image" tabindex="0"></button>
+      <button aria-selected="false" aria-controls="mission-tab" role="tab" data-image="people2-image" tabindex="-1"></button>
+      <button aria-selected="false" aria-controls="pilot-tab" role="tab" data-image="people3-image" tabindex="-1"><span class="sr-only">The pilot</span></button>
+      <button aria-selected="false" aria-controls="people-tab" role="tab" data-image="people4-image" tabindex="-1"><span class="sr-only">The people engineer</span></button>
+    </div>
+    
+    <!-- people one -->
+    <article class="people-details flow" id="commander-tab" role="tabpanel" tabindex="0">
+      <header class="flow flow--space-small">
+        <h2 class="fs-500 ff-serif uppercase">--生命中的一切所願，是自然「吸引」而來--</h2>
+        <p class="fs-700 uppercase ff-serif">李開復</p>
+      </header>
+      <h4 class="fs-400">罹癌後，我希望的4個改變！李開復：順應身體的需要，而不只是把它當成圓夢的工具</h4>
+      <p class="fs-200">那天，午飯後小睡片刻醒來，突然想起老友，
+        撥電話過去，他也剛好有空，大約一個小時後，我跟先鈴就按了他家的門鈴. 老友夫妻倆熱情招呼我們在小院子裡坐下。秋日午後，陽光不燥不火，
+        溫度也剛剛好；幾棵桂花正開著，淡淡的香氣似有若無的飄散在微風裡。朋友把他的躺椅讓給我，我半躺著，瞇著眼，舒服到五臟六腑都鬆開了似的。朋友送茶來，
+        我閉著眼說：「你什麼時候變得這麼會過日子啊？三兩棵桂花，
+        加上這躺椅！」... <a class="ff-sans-cond fs-200 lowercase text-accent" href="https://www.fiftyplus.com.tw/articles/23513" target="_blank" rel="noreferrer noopener">read more</a>
+    </article> 
+    
+    <!--people 2-->
+    <article hidden class="people-details flow" id="mission-tab" role="tabpanel" tabindex="0">
+      <header class="flow flow--space-small">
+        <h2 class="fs-500 ff-serif uppercase">--人生無常，請珍惜平常--</h2>
+        <p class="fs-700 uppercase ff-serif">陳文茜</p>
+      </header>
+      <h4 class="fs-400">人性真荒謬，至死彷彿從未活過！陳文茜：快樂比任何學問都難，如何得到？</h4>
+      <p class="fs-200">有一段對話，道盡多數人性之荒謬：弟子問達頼喇嘛：「您能談談人類的奇怪之處嗎？」達頼喇嘛答道：「他們急於成長，然後又哀嘆失去的童年；他們以健康換取金錢，不久後又想用金錢恢復健康。
+        他們對未來焦慮不已，卻又無視現在的幸福。因此，他們既不活在當下，也不活在未來。他們活著彷彿自己從來不會死亡；
+        直至臨死前，卻又彷彿從未活過。」....<a class="ff-sans-cond fs-200 lowercase text-accent" href="people2.html" 
+        target="_blank" rel="noreferrer noopener">read more</a>
+      </p>
+    </article> 
+    
+    <!-- people 3 -->
+    <article hidden class="people-details flow" id="pilot-tab" role="tabpanel" tabindex="0">
+      <header class="flow flow--space-small">
+        <h2 class="fs-500 ff-serif uppercase">50後的自在，是放下不是放空！</h2>
+        <p class="fs-700 uppercase ff-serif">吳若權</p>
+      </header>
+      <h4 class="fs-400">擁有時積極努力，沒有時接受失去</h4>
+      <p class="fs-200">短短260字的《心經》，裡面的「無」字，總共出現21次。
+        「無」，是《心經》裡面出現最多的字。「無」與「空」，看起來都是很抽象的概念；但是，
+        在《心經》中卻有嚴謹的邏輯。必須先覺知「無」，才能理解「空」。但是，在覺知「無」
+        的同時，要好好活在當下，清楚地覺察，也就是安頓自己，身心自在，否則沒有辦法覺知「
+        無」...<a class="ff-sans-cond fs-200 lowercase text-accent" href="https://www.fiftyplus.com.tw/articles/22240" 
+        target="_blank" rel="noreferrer noopener">read more</a></p>
+    </article> 
+    
+    <!-- people4 -->
+    <article hidden class="people-details flow" id="people-tab" role="tabpanel" tabindex="0">
+      <header class="flow flow--space-small">
+        <h2 class="fs-500 ff-serif uppercase">不在乎的力量!推動世界進步的，是有著獨特想法的人們</h2>
+        <p class="fs-700 uppercase ff-serif">奈良美智</p>
+      </header>
+      <h4 class="fs-400">不當別人喜歡的人，累積真正重要的事</h4>
+      <p class="fs-200">活躍於全球，作為亞洲代表性的重要當代藝術家之一，
+        首次來到台灣舉辦特展的奈良美智，一開幕就人潮爆滿，是近來藝文界最熱話題。
+        他的作品大多是有著一雙大眼的孩子或小動物，看似可愛療癒，卻帶著憤怒、
+        或像是打著壞主意般的複雜神情，擄獲了全球粉絲的心。其中，奈良美智著名的巨幅畫作《
+        背後藏刀》（Knife Behind Back），2019年在香港蘇富比秋拍上以1.96億港元（
+        約新台幣7億元）的天價拍出，也讓奈良美智晉身日本最具身價的藝術家...<a class="ff-sans-cond fs-200 lowercase text-accent" href="https://www.fiftyplus.com.tw/articles/20933" 
+        target="_blank" rel="noreferrer noopener">read more</a></p>
+    </article> 
+    
+    
+    <picture id="people1-image">
+      <img style="filter:sepia(100%)"  src="./assets/people/people1.jpg" alt="李開復">
+    </picture>
+    <picture hidden id="people2-image">
+      <img style="filter:sepia(100%)" width= "500" height="500" src="assets/people/people2.jfif" alt="陳文茜">
+    </picture>
+    <picture hidden id="people3-image">
+      <img style="filter:sepia(100%)" width= "500" height="500" src="assets/people/people3.jfif" alt="吳若權">
+    </picture>
+    <picture hidden id="people4-image">
+      <img width= "500" height="500" src="assets/people/people4.jpg" alt="奈良美智">
+    </picture>
+  </main>
+</body>
+</html>
